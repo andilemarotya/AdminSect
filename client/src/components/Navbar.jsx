@@ -23,10 +23,10 @@ const Navbar = () => {
       background : "none",
       boxShadow : "none",
     }} >
-      <Toolbar sx = {{justifyContent: "space-between"}} >
+      <Toolbar sx = {{justifyContent: "space-between"}}>
         {/*LEFT SIDE */}
         <FlexBetween>
-          <IconButton onClick={console.log('open/ close sidebar')}>
+          <IconButton onClick={console.log('open/close sidebar')}>
             <MenuIcon />
           </IconButton>
           <FlexBetween 
@@ -56,7 +56,6 @@ const Navbar = () => {
           </IconButton>
 
         </FlexBetween>
-
       </Toolbar>
     </AppBar>
   )
