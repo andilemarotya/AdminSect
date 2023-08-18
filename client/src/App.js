@@ -10,7 +10,7 @@ import Dashboard from "scenes/dashboard";
 
 function App() {
   const mode = useSelector( (state) => state.global.mode);
-  const theme = useMemo( () => createTheme(themeSettings(mode)), [mode])
+  const theme = useMemo( () => createTheme(themeSettings(mode)), [mode]);
   return (
     /*Here we are using our Dark or Light mode state, from "state folder" */
     <div className="app">

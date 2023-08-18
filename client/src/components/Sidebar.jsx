@@ -93,12 +93,12 @@ const navItems = [
     },
 ];
 
-const Sidebar = ({
+const Sidebar = (
     drawerWidth,
     isSidebarOpen,
     setIsSidebarOpen,
     isNonMobile
-    }) => {
+    ) => {
         const {pathname} = useLocation();
         const [active, setActive] = useState("");
         const navigate = useNavigate();
