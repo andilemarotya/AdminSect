@@ -94,11 +94,11 @@ const navItems = [
 ];
 
 const Sidebar = (
-    drawerWidth,
+    {drawerWidth,
     isSidebarOpen,
     setIsSidebarOpen,
     isNonMobile
-    ) => {
+    }) => {
         const {pathname} = useLocation();
         const [active, setActive] = useState("");
         const navigate = useNavigate();
@@ -191,7 +191,7 @@ const Sidebar = (
                                         )}
                                     </ListItemButton>
                                 </ListItem>
-                            )
+                            );
                         })
                     }    
                     </List>
