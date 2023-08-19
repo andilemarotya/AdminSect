@@ -1,6 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-{/*Here we assume the user logged in and we just gonna use her user name*/}
+/*Here we assume the user logged in and we just gonna use her user name*/
 const initialState = {
     mode: "dark",
     userId: "63701cc1f03239b7f700000e",
