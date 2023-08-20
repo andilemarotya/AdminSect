@@ -4,15 +4,7 @@ export const api = createApi({
     baseQuery: fetchBaseQuery({ baseUrl: process.env.REACT_APP_BASE_URL }),
     reducerPath: "adminApi",  //Name of the slice
     tagTypes: [
-        "User",
-        "Products",
-        "Customers",
-        "Transactions",
-        "Geography",
-        "Sales",
-        "Admins",
-        "Performance",
-        "Dashboard",
+        "User",   
     ], //Represent the values of links
 
     endpoints: (build) => ({

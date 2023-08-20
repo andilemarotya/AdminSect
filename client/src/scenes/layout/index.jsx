@@ -15,7 +15,7 @@ const Layout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const userId = useSelector( (state) => state.global.userId )  //Taking userId from the redux-toolkit we created in state
   const {data} = useGetUserQuery(userId) ;   //Now this is our API call
-  console.log("🚀 ~ file: index.jsx:18 ~ Layout ~ data:", data)
+  console.log(" data:", data)
   
    
   return (
