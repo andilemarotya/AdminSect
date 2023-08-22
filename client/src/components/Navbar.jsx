@@ -58,7 +58,7 @@ const Navbar = ({
           <IconButton>
             <SettingsOutlined sx={{fontSize: "25px"}}/>
           </IconButton>
-
+          
         </FlexBetween>
       </Toolbar>
     </AppBar>

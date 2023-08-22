@@ -130,7 +130,6 @@ const Sidebar = (
                     width: drawerWidth,
                 }}}
             >
-
                 <Box width="100%">
                     <Box m="1.5rem 2rem 2rem 3rem">
                         <FlexBetween color={theme.palette.secondary.main}>
@@ -215,15 +214,15 @@ const Sidebar = (
                       <Typography fontWeight="bold" fontSize="0.9rem" sx={{color: theme.palette.secondary[100]}} >
                         {user.name}
                       </Typography>
-                      <Typography fontWeight="bold" fontSize="0.9rem" sx={{color: theme.palette.secondary[200]}} >
+                      <Typography fontSize="0.8rem" sx={{color: theme.palette.secondary[200]}} >
                         {user.occupation}
                       </Typography>
                       
                     </Box>
                     <SettingsOutlined
-                        sx={{color: theme.palette.secondary[300],
-                        fontSize:"25px"}}
-                      />     
+                      sx={{color: theme.palette.secondary[300],
+                      fontSize:"25px"}}
+                    />     
                   </FlexBetween>
                 </Box>
             </Drawer>
@@ -232,4 +231,4 @@ const Sidebar = (
   )
 }
 
-export default Sidebar
+export default Sidebar;
