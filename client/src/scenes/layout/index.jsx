@@ -13,15 +13,16 @@ import { useGetUserQuery } from 'state/api';
 const Layout = () => {
   const isNonMobile = useMediaQuery("(min-width: 600px)");
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-  const userId = useSelector( (state) => state.global.userId )  //Taking userId from the redux-toolkit we created in state
+  const userId = useSelector( (state) => state.global.userId );  //Taking userId from the redux-toolkit we created in state
   const {data} = useGetUserQuery(userId) ;   //Now this is our API call
-  console.log(" data:", data)
+  console.log('data:', data);
   
    
   return (
     <Box display={ isNonMobile ? "flex" : "block"} width="100%" height="100%">
       
       <Sidebar
+        user = {data || {}}  //sebd data info OR empty object if data is of "undefined"
         isNonMobile={isNonMobile}
         drawerWidth="250px"
         isSidebarOpen={isSidebarOpen}
@@ -29,9 +30,9 @@ const Layout = () => {
       />
       <Box  width="100%" height="100%">
           <Navbar
-          
-           isSidebarOpen={isSidebarOpen}
-           setIsSidebarOpen={setIsSidebarOpen}
+            user = {data || {}}
+            isSidebarOpen={isSidebarOpen}
+            setIsSidebarOpen={setIsSidebarOpen}
           />
           <Outlet />
       </Box>
