@@ -10,7 +10,7 @@ export const api = createApi({
         "Transactions",
         "Geography",
         "Sales",
-        //"Admins",
+        "Admins",
         //"Performance",
         //"Dashboard",
       ], //Represent the values of links
@@ -44,7 +44,11 @@ export const api = createApi({
         getSales: build.query({
             query: () => "sales/sales",
             providesTags: ["Sales"],
-          }),
+        }),
+        getAdmins: build.query({
+            query: () => "management/admins",
+            providesTags: ["Admins"],
+        }),
     })
 })
 
@@ -55,4 +59,5 @@ export const {
     useGetTransactionsQuery,
     useGetGeographyQuery,
     useGetSalesQuery,
+    useGetAdminsQuery,
 } = api;
