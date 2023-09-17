@@ -38,7 +38,7 @@ app.use(cors());
 /* ROUTES SETUP */
 app.use("/client", clientRoutes);
 app.use("/general", generalRoutes);
-app.use("/managment", managementRoutes);
+app.use("/management", managementRoutes);
 app.use("/sales", salesRoutes);
 
 /* Mongoose Setup */
